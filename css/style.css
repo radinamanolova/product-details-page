@@ -1,0 +1,40 @@
+.img-radio-btn{
+    width: 70%;
+}
+
+#backpackImagesCarousel{
+    width: 70%;
+    margin-left: 10%;
+}
+
+.color-btn{
+    cursor: pointer;
+}
+
+.form-check-input:checked {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+button.btn.btn-outline-dark.btn-lg{
+    margin-top: 4%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 1024px){
+    #backpackImagesCarousel{
+        width: 100%;
+        margin-bottom: 10%;
+        margin-left: 0;
+    }
+    button.btn.btn-outline-dark.btn-lg{
+        margin-top: 7%;
+    }
+}

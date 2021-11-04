@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Details Page</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-1">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-auto fw-bold" id="addToCart" href="#">
+                    <img src="images/logo.png" alt="Logo">
+                </a>
+                <img src="images/shopping-cart.png" alt="Cart icon">
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container" id="productName">
+            <div class="row">
+                <div class="col my-4">
+                    <h4 class="fw-bold">Backpack Nike Heritage</h4>
+                    <p>Item No. <span class="prodNum">DC4244-010</span></p>
+                </div>
+            </div>
+        </section>
+        <section class="container" id="productImages">
+            <div class="row mb-5">
+                <div class="col-xl-6 col-sm order-last">
+                    <p>Take your gear to go with the Nike Heritage Backpack.Its spacious main compartment features a
+                        sleeve that holds up to a 15" laptop, so your computer is never out of reach.2 zipped
+                        accessories pockets help keep your gear organised and easy to grab.This product is made from at
+                        least 65% recycled polyester fibres.</p>
+                    <p>Ready to take to work or school, the Nike Sportswear Heritage Backpack updates a classic look
+                        with smart storage options to keep your electronics stored securely.An internal padded sleeve
+                        provides quick access to your laptop while front and side accessories pockets help keep your
+                        lanyards, calculator and phone organised and easy to find.Padded shoulder straps and an
+                        easy-carry haul loop make it easy to grab your gear and go.</p>
+                    <p>Color: <span class="colorText">Black/Black/White</span></p>
+                    <div class="form-check form-check-inline my-4">
+                        <input class="form-check-input color-btn black" data-name="black" type="radio" id="colorBlack"
+                            value="black" name="chooseColor" checked>
+                        <img src="images/black-radio.jpg" for="colorBlack" alt="Backpack black" class="img-radio-btn">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input color-btn green" data-name="green" type="radio" id="colorGreen"
+                            value="green" name="chooseColor">
+                        <img src="images/green-radio.jpg" for="colorGreen" alt="Backpack green" class="img-radio-btn">
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input color-btn red" data-name="red" type="radio" id="colorRed"
+                            value="red" name="chooseColor">
+                        <img src="images/red-radio.jpg" for="colorRed" alt="Backpack red" class="img-radio-btn">
+                    </div>
+                        <p class="stock-info text-success mt-2">Available</p>
+                    <div class="d-grid gap-2">
+                        <button type="button" class="btn btn-outline-dark btn-lg btn-buy">
+                            Buy $<span class="price">35</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-sm order-first order-lg-last">
+                    <div id="backpackImagesCarousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#backpackImagesCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#backpackImagesCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#backpackImagesCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img id="img1" src="images/backpack-black-1.jpg" class="d-block w-100"
+                                    alt="Backpack Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="img2" src="images/backpack-black-2.png" class="d-block w-100"
+                                    alt="Backpack Image">
+                            </div>
+                            <div class="carousel-item">
+                                <img id="img3" src="images/backpack-black-3.png" class="d-block w-100"
+                                    alt="Backpack Image">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#backpackImagesCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#backpackImagesCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5 p-3 d-flex flex-column flex-lg-row justify-content-center p-2 bg-dark text-white text-center">
+        <a class="text-white p-2" href="#productName">Product Name</a>
+        <span class="d-none d-lg-block p-2">|</span>
+        <a class="text-white p-2" href="#productImages">Product Images</a>
+        <span class="d-none d-lg-block p-2">|</span>
+        <a class="text-white p-2" href="#addToCart">Add to Cart</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
